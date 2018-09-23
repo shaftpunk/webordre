@@ -1,18 +1,34 @@
+
+
+
+
 #one{
     padding: 20px 50px 60px;
+    background-image: linear-gradient(to right, #404040, #fef8ef);
 }
 
 nav{
     background: #404040;
 }
 
+input, textarea {
+  background-color :  #f0fed9;
+}
+
+#form{
+  background-color :  #f0fed9;
+}
 #two{
+    background: #404040;
+    color: #f0fed9;
+        padding: 20px 50px 10px;
+}
+
+#demo{
     background: #404040;
     color: #f0fed9;
 }
 
-
-
 body{
-    background-image: linear-gradient(to right, #404040,#26a0da);
+    background-image: linear-gradient(to right, #404040, #fef8ef);
 }
