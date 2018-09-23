@@ -8,23 +8,30 @@ nav{
     background: #404040;
 }
 
-input, textarea {
-  background-color :  #f0fed9;
+
+
+
+/*Estattet av endringer i card i bootstrap.css */
+ #two{
+    /* background: #404040;
+    color: #f0fed9; */
+    padding: 20px 50px 10px;
 }
 
-#form{
-  background-color :  #f0fed9;
-}
-#two{
-    background: #404040;
-    color: #f0fed9;
-        padding: 20px 50px 10px;
+#two:hover{
+  /* box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
+.btn-dark:hover {
+  color: #fef8ef;
+  background-color: #404040;
+  border-color: #1d2124;
+}
+/*
 #demo{
     background: #404040;
     color: #f0fed9;
-}
+} */
 
 body{
     background-image: linear-gradient(to right, #404040, #fef8ef);

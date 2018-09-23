@@ -2571,14 +2571,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
-  color: #fff;
-  background-color: #343a40;
+  /* color: #f0fed9; */
+  color: #404040;
+  /* background-color: #343a40; */
+  background-color: #fef8ef
   border-color: #343a40;
 }
 
 .btn-dark:hover {
-  color: #fff;
-  background-color: #23272b;
+  color: #fef8ef;
+  background-color: #404040;
   border-color: #1d2124;
 }
 
@@ -4380,8 +4382,30 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid #404040;
   border-radius: 0.25rem;
-  box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+  background: #404040;
+  color: #f0fed9;
 }
+
+.fades{
+  /* For å slippe mikro management*/
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+
+.fades:hover{
+  transition-delay:0,2s;
+    box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 
 .card > hr {
   margin-right: 0;
