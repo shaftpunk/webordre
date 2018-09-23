@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8]><html lang="en" class="legacy"><![endif]-->
+<!--[if gte IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        min-height: 2000px;
+        padding-top: 70px;
+      }
+      .tableFloatingHeaderOriginal th {
+        background-color: #fff;
+        border-bottom: 1px solid #DDD;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Twitter Bootstrap Demo</a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <h1>Lås header test-tabell</h1>
+      <p>Dette er et forslag til tabell som låser headeren. Den tar utgangspunkt i en bootstrap tabell.</p>
+      </p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>K-nummer</th>
+            <th>Materialnummer</th>
+            <th>Materialnavn</th>
+            <th>Revisjonsdato</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+          <tr>
+            <td>H121212</td>
+            <td>500365</td>
+            <td>SECURE 2 (EDLING) 50 L</td>
+            <td>01.01.2028</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.stickytableheaders.js"></script>
+
+  <script>
+    // adding filler rows
+    for(var i = 0; i < 3; i++){
+      $('tbody tr').clone().appendTo('table');
+    }
+    var offset = $('.navbar').height();
+    $("html:not(.legacy) table").stickyTableHeaders({fixedOffset: offset});
+  </script>
+  </body>
+</html>
