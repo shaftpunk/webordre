@@ -1,7 +1,4 @@
 
-
-
-
 #one{
     padding: 20px 50px 60px;
     background-image: linear-gradient(to right, #404040, #fef8ef);
@@ -31,4 +28,5 @@ input, textarea {
 
 body{
     background-image: linear-gradient(to right, #404040, #fef8ef);
+    /* color: #f0fed9; */
 }
